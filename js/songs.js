@@ -6,21 +6,21 @@
 //                   (a short clip is enough — it doesn't need to be the full song)
 // ============================================================
 const SONGS = [
-  { title: "tila tala",   artist: "syd hartha", cover: "assets/images/song1.jpg",  audio: "assets/audio/song1.mp3"  },
-  { title: "Don't Know What To Do",   artist: "Blackpink", cover: "assets/images/song2.jpg",  audio: "assets/audio/song2.mp3"  },
-  { title: "REDRED", artist: "Cortis", cover: "assets/images/song3.jpg",  audio: "assets/audio/song3.mp3"  },
-  { title: "Ayoko Maging Kaibigan",  artist: "kiddotin", cover: "assets/images/song4.jpg",  audio: "assets/audio/song4.mp3"  },
-  { title: "Selos",  artist: "the vowels they orbit", cover: "assets/images/song5.jpg",  audio: "assets/audio/song5.mp3"  },
-  { title: "Batangina",   artist: "Dyessa Garcia & Young Momshie", cover: "assets/images/song6.jpg",  audio: "assets/audio/song6.mp3"  },
-  { title: "PRIBADO", artist: "Toni Fowler x Tito Vince x Papi Galang", cover: "assets/images/song7.jpg",  audio: "assets/audio/song7.mp3"  },
-  { title: "Worth It?", artist: "Joshua Kim", cover: "assets/images/song8.jpg",  audio: "assets/audio/song8.mp3"  },
-  { title: "Pag-Ibig ay Kanibalismo II",  artist: "fitterkarma", cover: "assets/images/song9.jpg",  audio: "assets/audio/song9.mp3"  },
-  { title: "Araw-Araw",   artist: "Ben&Ben", cover: "assets/images/song10.jpg", audio: "assets/audio/song10.mp3" },
-  { title: "Minsan", artist: "Munimuni", cover: "assets/images/song11.jpg", audio: "assets/audio/song11.mp3" },
-  { title: "Tongue Tied",artist: "Grouplove", cover: "assets/images/song12.jpg", audio: "assets/audio/song12.mp3" },
-  { title: "Saranggola", artist: "Ben&Ben", cover: "assets/images/song13.jpg", audio: "assets/audio/song13.mp3" },
-  { title: "Like Real People Do", artist: "Hozier", cover: "assets/images/song14.jpg", audio: "assets/audio/song14.mp3" },
-  { title: "Sagada",  artist: "Cup of Joe", cover: "assets/images/song15.jpg", audio: "assets/audio/song15.mp3" },
+  { title: "tila tala", artist: "syd hartha", cover: "assets/images/song1.jpg", audio: "assets/audios/song1.mp4" },
+  { title: "Don't Know What To Do", artist: "Blackpink", cover: "assets/images/song2.jpg", audio: "assets/audios/song2.mp4" },
+  { title: "REDRED", artist: "Cortis", cover: "assets/images/song3.jpg", audio: "assets/audios/song3.mp4" },
+  { title: "Ayoko Maging Kaibigan", artist: "kiddotin", cover: "assets/images/song4.jpg", audio: "assets/audios/song4.mp4" },
+  { title: "Selos", artist: "the vowels they orbit", cover: "assets/images/song5.png", audio: "assets/audios/song5.mp4" },
+  { title: "Batangina", artist: "Dyessa Garcia & Young Momshie", cover: "assets/images/song6.jpg", audio: "assets/audios/song6.mp4" },
+  { title: "PRIBADO", artist: "Toni Fowler x Tito Vince x Papi Galang", cover: "assets/images/song7.jpg", audio: "assets/audios/song7.mp4" },
+  { title: "Worth It?", artist: "Joshua Kim", cover: "assets/images/song8.jpg", audio: "assets/audios/song8.mp4" },
+  { title: "Pag-Ibig ay Kanibalismo II", artist: "fitterkarma", cover: "assets/images/song9.jpg", audio: "assets/audios/song9.mp4" },
+  { title: "Araw-Araw", artist: "Ben&Ben", cover: "assets/images/song10.jpg", audio: "assets/audios/song10.mp4" },
+  { title: "Minsan", artist: "Munimuni", cover: "assets/images/song11.jpg", audio: "assets/audios/song11.mp4" },
+  { title: "Tongue Tied", artist: "Grouplove", cover: "assets/images/song12.jpg", audio: "assets/audios/song12.mp4" },
+  { title: "Saranggola", artist: "Ben&Ben", cover: "assets/images/song13.jpg", audio: "assets/audios/song13.mp4" },
+  { title: "Like Real People Do", artist: "Hozier", cover: "assets/images/song14.jpg", audio: "assets/audios/song14.mp4" },
+  { title: "Sagada", artist: "Cup of Joe", cover: "assets/images/song15.jpg", audio: "assets/audios/song15.mp4" },
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
