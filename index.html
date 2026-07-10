@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>happy birthday 🎂</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="site-nav">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M6 9c0-3 2-5 6-5s6 2 6 5v6c0 2.8-2.7 5-6 5s-6-2.2-6-5V9z" fill="#B9A6DC"/><path d="M8 8l-2-4 4 2M16 8l2-4-4 2" stroke="#4B3B63" stroke-width="1.4" fill="none" stroke-linecap="round"/><circle cx="9.5" cy="12" r="1" fill="#4B3B63"/><circle cx="14.5" cy="12" r="1" fill="#4B3B63"/></svg>
+    <span class="label">for you</span>
+  </div>
+  <div class="links">
+    <a href="index.html" class="active">Home</a>
+    <a href="songs.html">Songs</a>
+    <a href="idols.html">Idols</a>
+  </div>
+</nav>
+
+<!-- ============ HERO / SHOPFRONT ============ -->
+<section class="shopfront">
+
+  <div class="intro-text">
+    <h1>Happy Birthday!</h1>
+    <p>turning 15 on the 11 while there's 4 more days b4 pasukan LMAOO </p>
+  </div>
+
+  <!-- ---------- cat + yarn stage ---------- -->
+  <div class="cat-stage" id="catStage">
+    <div class="ground-shadow"></div>
+
+    <div class="cat-rig" id="catRig">
+      <svg viewBox="0 0 120 100">
+        <g class="cat">
+          <!-- tail -->
+          <path d="M84 68 C 108 66, 112 40, 96 30" stroke="#D9B8A3" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <!-- body -->
+          <ellipse cx="58" cy="66" rx="30" ry="20" fill="#D9B8A3"/>
+          <!-- legs -->
+          <rect x="38" y="80" width="8" height="14" rx="4" fill="#D9B8A3"/>
+          <rect x="72" y="80" width="8" height="14" rx="4" fill="#D9B8A3"/>
+          <!-- head -->
+          <circle cx="30" cy="46" r="19" fill="#D9B8A3"/>
+          <!-- ears -->
+          <path d="M16 34 L12 16 L28 30 Z" fill="#D9B8A3"/>
+          <path d="M40 32 L46 14 L30 28 Z" fill="#D9B8A3"/>
+          <path d="M17 30 L15 21 L23 28 Z" fill="#C79A82"/>
+          <path d="M37 29 L40 20 L31 27 Z" fill="#C79A82"/>
+          <!-- face -->
+          <ellipse cx="23" cy="46" rx="2.3" ry="3" fill="#4B3B63"/>
+          <ellipse cx="35" cy="46" rx="2.3" ry="3" fill="#4B3B63"/>
+          <path d="M28 52 q1.5 2 3 0" stroke="#4B3B63" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+          <path d="M18 53 L9 51 M18 55 L8 56" stroke="#4B3B63" stroke-width="1" opacity="0.6"/>
+          <path d="M40 53 L49 51 M40 55 L50 56" stroke="#4B3B63" stroke-width="1" opacity="0.6"/>
+        </g>
+        <g class="cat-paw" style="transform-origin:38px 58px;">
+          <ellipse cx="40" cy="62" rx="7" ry="9" fill="#D9B8A3"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="yarn-ball" id="yarnBall">
+      <svg viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="26" fill="#F3C6D0"/>
+        <path d="M6 30 Q30 6 54 30 Q30 54 6 30" stroke="#C98BA0" stroke-width="2" fill="none"/>
+        <path d="M10 18 Q30 30 50 18" stroke="#C98BA0" stroke-width="2" fill="none"/>
+        <path d="M10 42 Q30 30 50 42" stroke="#C98BA0" stroke-width="2" fill="none"/>
+        <path d="M30 4 Q26 30 30 56" stroke="#C98BA0" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ---------- cake + envelope (appear after cat settles) ---------- -->
+  <div class="gift-reveal" id="giftReveal">
+    <button class="gift-item" id="cakeBtn" aria-label="Open birthday surprise">
+      <svg viewBox="0 0 100 100">
+        <rect x="16" y="52" width="68" height="34" rx="6" fill="#F3C6D0"/>
+        <rect x="16" y="52" width="68" height="10" fill="#fff" opacity="0.5"/>
+        <rect x="24" y="38" width="52" height="18" rx="6" fill="#B9A6DC"/>
+        <rect x="46" y="20" width="8" height="20" fill="#FBE28A"/>
+        <g class="candle-flame">
+          <path d="M50 8 C 54 14, 54 18, 50 20 C 46 18, 46 14, 50 8 Z" fill="#F3934A"/>
+        </g>
+      </svg>
+      <span>tap</span>
+    </button>
+
+    <button class="gift-item" id="envelopeBtn" aria-label="Open birthday letter">
+      <svg viewBox="0 0 100 80">
+        <rect x="6" y="14" width="88" height="60" rx="6" fill="#FBF6EE"/>
+        <path d="M6 20 L50 52 L94 20" stroke="#B9A6DC" stroke-width="4" fill="none" stroke-linejoin="round"/>
+        <path class="envelope-flap" d="M6 20 L50 50 L94 20 L94 14 L6 14 Z" fill="#B9A6DC"/>
+        <circle cx="50" cy="38" r="7" fill="#F3C6D0"/>
+      </svg>
+      <span>open</span>
+    </button>
+  </div>
+
+  <p style="color:var(--soft-white); opacity:0.75; font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:40px;">
+    ↓ scroll for more ↓
+  </p>
+</section>
+
+<!-- ============ small scrollable footer note ============ -->
+<section style="min-height:60vh; display:flex; align-items:center; justify-content:center; background:var(--soft-white); padding:60px 20px;">
+  <div style="max-width:520px; text-align:center;">
+    <h2 style="color:var(--dusty-lav); font-size:1.6rem; margin-bottom:14px;">Uto-uto AHWHWHAHAHA JOKE</h2>
+    <p style="line-height:1.8; opacity:0.8;">
+      Check out the <a href="songs.html" style="color:var(--deep-plum); font-weight:700; text-decoration:underline;">songs</a>
+      or <a href="idols.html" style="color:var(--deep-plum); font-weight:700; text-decoration:underline;"> uy si idol </a>
+      next ig dot dot
+    </p>
+  </div>
+</section>
+
+<!-- ============ confetti layer ============ -->
+<div id="confetti-layer"></div>
+
+<!-- ============ blur overlay + letter modal ============ -->
+<div class="blur-overlay" id="blurOverlay"></div>
+
+<div class="letter-modal" id="letterModal">
+  <div class="letter-card">
+    <button class="close-letter" id="closeLetter">&times;</button>
+    <h2>Dear Charo, </h2>
+    <div class="letter-body">
+<!-- ============================================================
+     EDIT YOUR MESSAGE BELOW. Line breaks are kept as-is.
+     ============================================================ -->
+To the girl na anlakas ng trip pagsabayin ang kape at melatonin, adik na adik kay syd hartha, at madaming namiss na gala this summer, happy birthday!!
+
+Andaming nangyari all in one year of actually knowing you. My very first memory with you was nung nagtranscribe tayo ng B29 MDAs AHWHAHAHH. Isa ka sa mga taong kahit papaano di mo kailangan mag-effort para maging masaya yung paligid mo, and kahit minsan sinasabi mong ure on some nonchalant shi, u arent :joy: . 
+
+Alam kong deep down ang dami mo talagang iniisip at pinag-aalala, kahit di mo laging sinasabi. Kaya sana lang alam mo, kahit di ka open magsabi, may mga taong maghintay hanggang ready ka. And if you'll never be ready to talk about it, then may mga mananatili lang sa tabi mo.
+
+Wala akong ibang masasabi kundi salamat. Salamat dahil kung hindi ka, well ikaw, ikaw, at sa lahat ng mga ala-alang nagawa nating magkasama kahit na nanggagago ako most of the time heh. Sana this year, you give yourself grace and the trust you need to be able to do the things you've always wanted to do. Sana mas konti rin yung magiging rason ng crashouts mo AHWHAHAHH at mas marami ka pang dahilan para tumawa. 
+
+Stay for yourself, even when the world makes you want to disappear. You can take the time and go for a while, as long as you know na kahit na patuloy na gumagalaw ang mundo, we'll be in the easiest places to find.
+
+Basta alam mo na naman 'to pero babanggitin ko pa rin: nandito lang ako, kahit anong oras, kahit anong araw, kahit anong kailangan mo. Happy happy birthday! Sana ma-enjoy mo yung day mo nang buong-buo.
+<!-- ============================================================ -->
+    </div>
+    <div class="signoff">— R</div>
+  </div>
+</div>
+
+<!-- mascot signature -->
+<div class="mascot-signature">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M6 9c0-3 2-5 6-5s6 2 6 5v6c0 2.8-2.7 5-6 5s-6-2.2-6-5V9z" fill="#B9A6DC"/><circle cx="9.5" cy="12" r="1" fill="#4B3B63"/><circle cx="14.5" cy="12" r="1" fill="#4B3B63"/></svg>
+</div>
+
+<script src="js/home.js"></script>
+</body>
+</html>

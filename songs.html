@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>songs for you</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M6 9c0-3 2-5 6-5s6 2 6 5v6c0 2.8-2.7 5-6 5s-6-2.2-6-5V9z" fill="#B9A6DC"/><path d="M8 8l-2-4 4 2M16 8l2-4-4 2" stroke="#4B3B63" stroke-width="1.4" fill="none" stroke-linecap="round"/><circle cx="9.5" cy="12" r="1" fill="#4B3B63"/><circle cx="14.5" cy="12" r="1" fill="#4B3B63"/></svg>
+    <span class="label">for you</span>
+  </div>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="songs.html" class="active">Songs</a>
+    <a href="idols.html">Idols</a>
+  </div>
+</nav>
+
+<section class="songs-page">
+
+  <!-- ---------- closed album ---------- -->
+  <div class="album-stage" id="albumStage">
+    <button class="album-cover" id="albumCover" aria-label="Open playlist">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="16" fill="#FBF6EE"/>
+        <circle cx="50" cy="50" r="5" fill="#4B3B63"/>
+        <path d="M50 8 A42 42 0 0 1 92 50" stroke="#FBF6EE" stroke-width="3" fill="none" opacity="0.6"/>
+      </svg>
+    </button>
+    <div class="album-caption">
+      <div class="title">your mixtape</div>
+      <div class="sub">15 tracks · tap to open</div>
+      <div class="tap-hint">● tap the album ●</div>
+    </div>
+  </div>
+
+  <!-- ---------- expanded playlist ---------- -->
+  <div class="playlist-stage" id="playlistStage">
+    <button class="back-btn" id="backBtn">&larr; back to album</button>
+    <div class="playlist-header">
+      <div class="fallback-cover" id="playlistCoverFallback"></div>
+      <div>
+        <h2>your mixtape</h2>
+        <p id="trackCount">15 songs</p>
+      </div>
+    </div>
+    <ul class="song-list" id="songList"><!-- populated by js/songs.js --></ul>
+  </div>
+
+</section>
+
+<!-- ---------- vertical "podcast style" now playing modal ---------- -->
+<div class="player-modal" id="playerModal">
+  <div class="player-card">
+    <button class="close-player" id="closePlayer">&times;</button>
+    <img class="cover-art" id="playerCover" src="" alt="">
+    <div class="p-title" id="playerTitle">Song title</div>
+    <div class="p-artist" id="playerArtist">Artist</div>
+
+    <div class="progress-row">
+      <span id="curTime">0:00</span>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <span id="durTime">0:00</span>
+    </div>
+
+    <div class="player-controls">
+      <button id="playToggle" class="play-toggle" aria-label="Play/Pause">
+        <svg id="playIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </div>
+
+    <audio id="audioEl" preload="metadata"></audio>
+  </div>
+</div>
+
+<div class="mascot-signature">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M6 9c0-3 2-5 6-5s6 2 6 5v6c0 2.8-2.7 5-6 5s-6-2.2-6-5V9z" fill="#B9A6DC"/><circle cx="9.5" cy="12" r="1" fill="#4B3B63"/><circle cx="14.5" cy="12" r="1" fill="#4B3B63"/></svg>
+</div>
+
+<script src="js/songs.js"></script>
+</body>
+</html>
